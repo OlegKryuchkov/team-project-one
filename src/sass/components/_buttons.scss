@@ -1,0 +1,61 @@
+body {
+  background-color: aqua;
+}
+
+.button {
+  cursor: pointer;
+  padding: 0 10px;
+  max-width: 236px;
+  height: 48px;
+
+  background: rgba(0, 0, 0, 0.4);
+
+  border: 2px solid #ffffff;
+  border-radius: 25px;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: #f3c653;
+}
+
+.button__dark {
+  background: #000000;
+}
+
+.button__booking {
+  padding: 0 10px;
+  max-width: 384px;
+  height: 64px;
+
+  background: #000000;
+
+  border: 1px solid #f3c653;
+  border-radius: 25px;
+
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.button__modal {
+  padding: 0 10px;
+  max-width: 384px;
+  height: 64px;
+  background: #000000;
+
+  border: 1px solid #f3c653;
+  border-radius: 2px;
+
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+
+  color: #ffffff;
+
+  text-transform: uppercase;
+}
