@@ -1,0 +1,20 @@
+
+.btn {
+  display: block;
+
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+  background-color: transparent;
+  border-radius: 25px;
+  padding: 14px 24px;
+  border: 2px solid var(--white-color);
+  
+  &:hover,
+  &:focus {
+    background-color: var(--white-color);
+  }
+}
