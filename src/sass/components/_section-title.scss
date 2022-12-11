@@ -9,11 +9,12 @@
     color: rgba(73, 72, 72, 1);
 
     line-height: 100%;
-    letter-spacing: 30%;
-}
+    
+    @include tablet {
+        margin-top: 4px;
+        margin-bottom: 24px;
+        
+        font-size: 64px;
 
-// @media screen and (min-width: 1200px) {       
-//     margin-bottom: 50px;  
-//     font-size: 36px;
-//     line-height: 1.17;
-//  }
+    }
+}
