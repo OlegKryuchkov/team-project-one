@@ -1,6 +1,22 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
 :root {
-  --main-title-color: ;
+  --first-color-fon:#FFFDEE;
+  --secondary-color-fon:#F0ECD6;
+  --footer-color-fon: #0E0C07;
+  --second-logo-color: #828282;
+  --accent-color: #F3C653;
+  --second-accent-color: #C79002;
+  --main-title-color: #000000;
+  --main-text-color: #5F5F5F;
+  --hotel-text-color: #7A7A7A;
+  --second-text-color: #BABABA;
+  --pre-title-text-color: #B4B4B4;
+  --text-menu-color: #000000;
+  --white-color: #FFFFFF;
+  --placeholder-color: #808080;
+  --shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+  --gradient: rgba(0, 0, 0, 0.65);
+  --animation-link: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .visually-hidden {
@@ -14,6 +30,48 @@
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+@font-face {
+  font-family: "Montserrat-300";
+  font-style: normal;
+  font-weight: 300;
+  src: url(/src/fonts/Montserrat-Light.ttf);
+}
+@font-face {
+  font-family: "Montserrat-400";
+  font-style: normal;
+  font-weight: 400;
+  src: url(/src/fonts/Montserrat-Regular.ttf);
+}
+@font-face {
+  font-family: "Montserrat-500";
+  font-style: normal;
+  font-weight: 500;
+  src: url(/src/fonts/Montserrat-Medium.ttf);
+}
+@font-face {
+  font-family: "Montserrat-600";
+  font-style: normal;
+  font-weight: 600;
+  src: url(/src/fonts/Montserrat-SemiBold.ttf);
+}
+@font-face {
+  font-family: "Montserrat-700";
+  font-style: normal;
+  font-weight: 700;
+  src: url(/src/fonts/Montserrat-Bold.ttf);
+}
+@font-face {
+  font-family: "Film P3";
+  font-style: normal;
+  font-weight: 700;
+  src: url(/src/fonts/FilmP3Bold.ttf);
+}
+body {
+  font-family: "Montserrat-600", sans-serif;
+  font-size: 12px;
+  color: var(--main-text-color);
 }
 
 p,
@@ -49,4 +107,138 @@ img {
 
 * {
   box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 414px) {
+  .container {
+    max-width: 414px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+.section {
+  padding-top: 16px;
+  padding-bottom: 20px;
+}
+
+.button {
+  padding: 0 10px;
+  max-width: 236px;
+  height: 48px;
+  background: rgba(0, 0, 0, 0.4);
+  border: 2px solid var(--white-color);
+  border-radius: 25px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+  transition: background-color var(--animation-link);
+}
+.button:hover, .button:focus {
+  background-color: var(--white-color);
+}
+@media screen and (min-width: 414px) {
+  .button {
+    min-width: 236px;
+    padding: 0;
+  }
+}
+
+.button__small {
+  max-width: 232px;
+}
+@media screen and (min-width: 414px) {
+  .button__small {
+    min-width: 232px;
+  }
+}
+
+.button__dark {
+  background: var(--text-menu-color);
+  transition: border-color var(--animation-link);
+}
+.button__dark:hover, .button__dark:focus {
+  border-color: var(--accent-color);
+}
+
+.button__booking {
+  padding: 0 10px;
+  max-width: 384px;
+  height: 64px;
+  background: var(--text-menu-color);
+  border: 1px solid var(--accent-color);
+  border-radius: 25px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--white-color);
+  text-transform: uppercase;
+  transition: background-color var(--animation-link), color var(--animation-link);
+}
+.button__booking:hover, .button__booking:focus {
+  background-color: var(--accent-color);
+  color: var(--text-menu-color);
+}
+@media screen and (min-width: 414px) {
+  .button__booking {
+    min-width: 384px;
+    padding: 0;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .button__booking {
+    min-width: 434px;
+  }
+}
+
+.button__modal {
+  padding: 0 10px;
+  max-width: 384px;
+  height: 64px;
+  background: var(--text-menu-color);
+  border: 1px solid var(--accent-color);
+  border-radius: 2px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--white-color);
+  text-transform: uppercase;
+  transition: background-color var(--animation-link), color var(--animation-link);
+}
+.button__modal:hover, .button__modal:focus {
+  background-color: var(--accent-color);
+  color: var(--text-menu-color);
+}
+@media screen and (min-width: 414px) {
+  .button__modal {
+    min-width: 384px;
+    padding: 0;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .button__modal {
+    min-width: 592px;
+  }
+}
+
+.test {
+  font-size: 80px;
+  background-color: red;
 }/*# sourceMappingURL=index.css.map */

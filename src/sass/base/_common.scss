@@ -1,9 +1,49 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
+@font-face {
+  font-family: 'Montserrat-300';
+  font-style: normal;
+  font-weight: 300;
+  src: url(/src/fonts/Montserrat-Light.ttf);
+}
+
+@font-face {
+  font-family: 'Montserrat-400';
+  font-style: normal;
+  font-weight: 400;
+  src: url(/src/fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Montserrat-500';
+  font-style: normal;
+  font-weight: 500;
+  src: url(/src/fonts/Montserrat-Medium.ttf);
+}
+
+@font-face {
+  font-family: 'Montserrat-600';
+  font-style: normal;
+  font-weight: 600;
+  src: url(/src/fonts/Montserrat-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: 'Montserrat-700';
+  font-style: normal;
+  font-weight: 700;
+  src: url(/src/fonts/Montserrat-Bold.ttf);
+}
+
+@font-face {
+  font-family: 'Film P3';
+  font-style: normal;
+  font-weight: 700;
+  src: url(/src/fonts/FilmP3Bold.ttf);
+}
 body {
-  //   font-family: 'Open Sans', sans-serif;
-  //   font-weight: 600;
-  //   font-size: 12px;
-  //   color: var(--second-title-color);
+    font-family: 'Montserrat-600', sans-serif;
+    font-size: 12px;
+    color: var(--main-text-color);
 }
 
 .list {
