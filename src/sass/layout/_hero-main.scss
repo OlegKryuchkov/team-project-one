@@ -3,13 +3,80 @@
   padding-top: 181px;
   padding-bottom: 20px;
   background: rgba(0, 0, 0, 0.65);
+<<<<<<< Updated upstream
   @include tablet {
     padding-top: 188px;
     padding-bottom: 15px;
+=======
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.65),
+      rgba(0, 0, 0, 0.65)
+    ),
+    url(./../images/homepage/banner-bg/banner-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)
+      ),
+      url(./../images/homepage/banner-bg/banner-bg-2x.jpg);
+  }
+  @include tablet {
+    padding-top: 188px;
+    padding-bottom: 15px;
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)
+      ),
+      url(./../images/homepage/banner-bg/banner-bg-tablet.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url(./../images/homepage/banner-bg/banner-bg-tablet-2x.jpg);
+    }
+>>>>>>> Stashed changes
   }
   @include desktop {
     padding-top: 164px;
     padding-bottom: 64px;
+<<<<<<< Updated upstream
+=======
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)
+      ),
+      url(./../images/homepage/banner-bg/banner-bg-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url(./../images/homepage/banner-bg/banner-bg-desktop-2x.jpg);
+    }
+>>>>>>> Stashed changes
   }
 }
 .section-hero__title {
@@ -70,14 +137,24 @@
     position: absolute;
     top: 64px;
     right: 15px;
+<<<<<<< Updated upstream
     padding: 8px 0px 8px 34px;
   }
   @include tablet {
     margin-right: 137px;
+=======
+    padding: 8px 6px 8px 6px;
+  }
+  @include tablet {
+    margin-right: 137px;
+    padding: 8px 8px 8px 10px;
+    max-width: 285px;
+>>>>>>> Stashed changes
   }
   @include desktop {
     margin-right: 297px;
   }
+<<<<<<< Updated upstream
   display: inline-block;
   padding: 8px 8px 8px 44px;
   border: 1px solid rgba(243, 198, 83, 0.7);
@@ -86,11 +163,27 @@
 .address__link {
   display: block;
   max-width: 210px;
+=======
+  display: inline-flex;
+  gap: 8px;
+  padding: 8px 8px 8px 10px;
+  border: 1px solid rgba(243, 198, 83, 0.7);
+  border-radius: 2px;
+  align-items: center;
+  max-width: 210px;
+}
+.address__link {
+  display: block;
+>>>>>>> Stashed changes
   font-family: 'Montserrat';
   font-size: 12px;
   line-height: 1.25;
   letter-spacing: 0.01em;
+<<<<<<< Updated upstream
   color: var(--address-text-color);
+=======
+  color: #e5e5e5;
+>>>>>>> Stashed changes
   @include tablet {
     font-size: 16px;
   }
@@ -115,11 +208,20 @@
 
 .list-social {
   display: flex;
+<<<<<<< Updated upstream
+=======
+  gap: 23px;
+>>>>>>> Stashed changes
   @include desktop {
     display: none;
   }
 }
 .list-social__icon {
+<<<<<<< Updated upstream
   width: 24px;
   height: 24px;
+=======
+  display: block;
+  fill: rgba(243, 198, 83, 0.7);
+>>>>>>> Stashed changes
 }
