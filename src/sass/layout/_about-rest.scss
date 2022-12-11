@@ -1,55 +1,53 @@
 .main-page-about-restaurant {
-    background-color: var(--first-color-fon);
-    position: relative;
-
+  background-color: var(--first-color-fon);
+  position: relative;
 }
 .main-page-photo-about-restaurant {
-    position: absolute;
-    top: 210px;
-    right: 15px;
+  position: absolute;
+  top: 210px;
+  right: 15px;
 
-    @include tablet {
-        top: -32px;
-        right: 112px;
-    }
-    @include desktop {
-        right: 180px;
-    }
+  @include tablet {
+    top: -32px;
+    right: 112px;
+  }
+  @include desktop {
+    right: 180px;
+  }
 }
 .main-page-second-photo-about-restaurant {
-    margin-top: 382px;
-    margin-bottom: 349px;
-    display: flex;
-    align-items: center;
-    gap: 20px;
+  margin-top: 382px;
+  margin-bottom: 349px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
 
-    @include tablet {
-        margin-top: 142px;
-        gap: 48px;
-    }
-    @include desktop {
-        margin-top: 162px;
-        gap: 40px;
-    }
+  @include tablet {
+    margin-top: 142px;
+    gap: 48px;
+  }
+  @include desktop {
+    margin-top: 162px;
+    gap: 40px;
+  }
 }
-.main-page-second-photo-about-restaurant-text {  
-    font-size: 12px;
-    line-height: 1.25;
-    line-height: 100%;
-    letter-spacing: 2%;
-    color: var(--second-accent-color); 
-    width: 163px;   
-    
-    @include tablet {
-        font-size: 16px;
+.main-page-second-photo-about-restaurant-text {
+  font-size: 12px;
+  line-height: 1.25;
+  line-height: 100%;
+  letter-spacing: 0.02em;
+  color: var(--second-accent-color);
+  width: 163px;
 
-        width: 312px;
-    }
+  @include tablet {
+    font-size: 16px;
+
+    width: 312px;
+  }
 }
 
 .main-page-about-restaurant-slider {
-    // position: absolute;
-    // bottom: 20px;
-    // right: 85px;
-
+  // position: absolute;
+  // bottom: 20px;
+  // right: 85px;
 }
