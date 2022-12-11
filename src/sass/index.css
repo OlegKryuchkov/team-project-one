@@ -27,7 +27,8 @@
   border: 0;
   padding: 0;
   white-space: nowrap;
-  clip-path: inset(100%);
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -241,4 +242,28 @@ img {
 .test {
   font-size: 80px;
   background-color: red;
+}
+
+.hero-hotel {
+  background: rgba(0, 0, 0, 0.65);
+}
+
+.hero-hotel__title {
+  font-family: "Film P3";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 1.0729166667;
+  letter-spacing: 0.3em;
+  color: var(--white-color);
+}
+
+.hero-hotel__after-title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--white-color);
 }/*# sourceMappingURL=index.css.map */

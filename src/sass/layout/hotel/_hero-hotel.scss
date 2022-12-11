@@ -1,0 +1,56 @@
+.hero-hotel {
+  background: var(--gradient);
+  background-image: url(/src/images/hotel/bg/hotel-bg-min.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 740px;
+  //   text-align: center;
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(/src/images/hotel/bg/hotel-bg-2x-min.jpg);
+  }
+}
+
+.hero-hotel__title {
+  padding-top: 181px;
+  padding-bottom: 32px;
+  padding-left: 56px;
+  padding-right: 55px;
+
+  font-family: 'Film P3';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 96px;
+  line-height: calc(103 / 96);
+  letter-spacing: 0.3em;
+  color: var(--white-color);
+}
+
+.hero-hotel__after-title {
+  margin-bottom: 178px;
+  text-align: center;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: calc(24 / 20);
+  letter-spacing: 0.02em;
+  color: var(--white-color);
+}
+
+.hero-hotel__button-table {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 24px;
+}
+
+.hero-hotel__button-number {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  //   margin-bottom: 24px;
+}
