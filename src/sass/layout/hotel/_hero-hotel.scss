@@ -54,3 +54,18 @@
   margin-right: auto;
   //   margin-bottom: 24px;
 }
+
+.hero-hotel__soc-list {
+  list-style: none;
+  display: flex;
+  gap: 23px;
+  padding-left: 1px;
+  margin-top: 61px;
+}
+
+// .hero-hotel__soc-link {
+// }
+
+.hero-hotel__soc-icon {
+  fill: var(--accent-color);
+}
