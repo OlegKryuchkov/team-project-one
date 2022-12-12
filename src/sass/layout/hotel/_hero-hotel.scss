@@ -52,3 +52,12 @@
     }
   }
 }
+.box-hero-title {
+  margin-bottom: 178px;
+  @include tablet {
+    margin-bottom: 218px;
+  }
+  @include tablet {
+    margin-bottom: 242px;
+  }
+}
