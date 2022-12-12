@@ -21,13 +21,16 @@
     font-size: 40px;
     line-height: 1.075;
     letter-spacing: 0.3em;
-    color: var(--second-logo-color);
+    color: #494848;
 
     @include tablet {
         font-size: 64px;
         margin-bottom: 8px;
 
 
+    }
+    @include desktop {
+        color: var(--second-logo-color);
     }
 }
 
@@ -36,6 +39,7 @@
     font-size: 16px;
     line-height: 1.25;
     letter-spacing: 0.02em;
+
 
     @include tablet {
         margin-bottom: 52px;
@@ -66,12 +70,15 @@
     fill: var(--second-accent-color);
 
     color: #494848;
+    @include desktop {
+        color: var(--second-logo-color);
+    }
 
 }
 
 .contacts__link__secondary-number {
     margin-left: 12px;
-    // 
+
 }
 
 .contacts__list>li {
@@ -162,6 +169,7 @@
 }
 
 .contacts_map {
+    width: 100%;
     border: 1px solid var(--pre-title-text-color);
     box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
     border-radius: 2px;
