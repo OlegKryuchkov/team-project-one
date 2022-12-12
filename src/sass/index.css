@@ -125,17 +125,17 @@ a {
 }
 @media screen and (min-width: 414px) {
   .container {
-    max-width: 384px;
+    max-width: 414px;
   }
 }
 @media screen and (min-width: 1024px) {
   .container {
-    max-width: 930px;
+    max-width: 960px;
   }
 }
 @media screen and (min-width: 1280px) {
   .container {
-    max-width: 1110px;
+    max-width: 1140px;
   }
 }
 
