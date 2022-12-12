@@ -148,6 +148,22 @@ a {
     padding-top: 120px;
   }
 }
+.section-about {
+  padding-top: 16px;
+  padding-bottom: 72px;
+}
+@media screen and (min-width: 1024px) {
+  .section-about {
+    padding-top: 120px;
+    padding-bottom: 96px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .section-about {
+    padding-bottom: 118px;
+  }
+}
+
 .section-title {
   margin-bottom: 12px;
   margin-top: 12px;
@@ -516,9 +532,14 @@ a {
 }
 
 .main-page-photo-about-restaurant {
-  position: absolute;
-  top: 210px;
-  right: 15px;
+  width: 65%;
+  margin-top: 28px;
+  margin-left: auto;
+}
+@media screen and (min-width: 414px) {
+  .main-page-photo-about-restaurant {
+    width: 246px;
+  }
 }
 @media screen and (min-width: 1024px) {
   .main-page-photo-about-restaurant {
@@ -533,8 +554,7 @@ a {
 }
 
 .main-page-second-photo-about-restaurant {
-  margin-top: 382px;
-  margin-bottom: 349px;
+  margin-top: 32px;
   display: flex;
   align-items: center;
   gap: 20px;
@@ -550,6 +570,17 @@ a {
     margin-top: 162px;
     gap: 40px;
   }
+}
+.main-page-second-photo-about-restaurant picture {
+  width: 50%;
+}
+@media screen and (min-width: 414px) {
+  .main-page-second-photo-about-restaurant picture {
+    max-width: 200px;
+  }
+}
+.main-page-second-photo-about-restaurant p {
+  width: 41%;
 }
 
 .main-page-second-photo-about-restaurant-text {
