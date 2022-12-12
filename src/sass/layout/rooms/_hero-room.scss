@@ -1,0 +1,92 @@
+.hero-room {
+  background: rgba(0, 0, 0, 0.65);
+}
+.container--hroom {
+  padding-top: 350px;
+  position: relative;
+}
+.box-margin {
+  margin-bottom: 17px;
+  @include tablet {
+    margin-bottom: 24px;
+  }
+  @include desktop {
+    margin-bottom: 0px;
+  }
+}
+.hero-room__title {
+  margin-bottom: 14px;
+
+  font-family: 'Times New Roman';
+  font-size: 28px;
+  line-height: 1.14;
+  letter-spacing: 0.05em;
+  color: var(--white-color);
+  @media screen and (max-width: 1023px) {
+    max-width: 325px;
+  }
+  @include tablet {
+    margin-bottom: 24px;
+
+    font-size: 36px;
+    line-height: 1.13;
+  }
+}
+.hero-room__upercase {
+  display: inline;
+  text-transform: uppercase;
+}
+.hero-room__text {
+  font-family: 'Montserrat-700';
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: var(--white-color);
+  max-width: 325px;
+  @include tablet {
+    font-size: 16px;
+    max-width: 400px;
+  }
+}
+.address--room {
+  @include tablet {
+    margin-right: 41px;
+  }
+  @include desktop {
+    display: none;
+  }
+}
+.list-social--room {
+  @media screen and (max-width: 1023px) {
+    flex-direction: column;
+    gap: 11px;
+  }
+  @include tablet {
+    display: inline-flex;
+    gap: 23px;
+  }
+  @include desktop {
+    display: none;
+  }
+}
+.hero-room__btn {
+  position: absolute;
+  @media screen and (max-width: 1023px) {
+    bottom: 45px;
+    right: 54px;
+  }
+  @include tablet {
+    bottom: 64px;
+    right: 47px;
+  }
+  @include desktop {
+    bottom: 22px;
+    right: 84px;
+  }
+}
+.slick-dotted.slick-slider {
+  margin-bottom: 93px;
+}
+.relative {
+  position: relative;
+}
