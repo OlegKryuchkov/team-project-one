@@ -567,6 +567,56 @@ a {
   }
 }
 
+.footer {
+  padding: 40px 0px 42px;
+  background-color: #0e0c07;
+}
+
+.container-footer {
+  display: flex;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 1024px) {
+  .container-footer {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .wrap {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+  }
+}
+.wrap__logo-footer {
+  font-family: "Film P3";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.06;
+  letter-spacing: 0.3em;
+  color: #f3c653;
+}
+
+.footer-features__features-link {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #f3c653;
+}
+
+.footer-social {
+  display: flex;
+  align-items: center;
+  gap: 23px;
+  margin-top: 32px;
+}
+
 .section-hero--rest {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(././../images/restaurant/bg/restaurant-bg-min.jpg);
 }
