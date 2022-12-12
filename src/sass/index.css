@@ -130,14 +130,14 @@ a {
 }
 @media screen and (min-width: 1024px) {
   .container {
-    max-width: 960px;
-    padding-right: 60px;
+    max-width: 1024px;
+    padding-right: 47px;
     padding-left: 47px;
   }
 }
 @media screen and (min-width: 1280px) {
   .container {
-    max-width: 1140px;
+    max-width: 1280px;
     padding-right: 85px;
     padding-left: 85px;
   }
