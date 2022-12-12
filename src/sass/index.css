@@ -303,9 +303,6 @@ a {
 }
 
 .section-hero {
-  position: relative;
-  padding-top: 181px;
-  padding-bottom: 20px;
   background: rgba(0, 0, 0, 0.65);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(./../images/homepage/banner-bg/banner-bg.jpg);
@@ -323,9 +320,6 @@ a {
     padding-top: 188px;
     padding-bottom: 15px;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(./../images/homepage/banner-bg/banner-bg-tablet.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
   }
 }
 @media screen and (min-width: 1024px) and (min-device-pixel-ratio: 2), screen and (min-width: 1024px) and (min-resolution: 192dpi), screen and (min-width: 1024px) and (min-resolution: 2dppx) {
@@ -338,9 +332,6 @@ a {
     padding-top: 164px;
     padding-bottom: 64px;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(./../images/homepage/banner-bg/banner-bg-desktop.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
   }
 }
 @media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
@@ -349,25 +340,34 @@ a {
   }
 }
 
+@media screen and (max-width: 1023px) {
+  .container--hero {
+    position: relative;
+    padding-top: 181px;
+    padding-bottom: 20px;
+  }
+}
+
 .section-hero__title {
-  margin-bottom: 24px;
+  margin: 0 auto;
   font-family: "Film P3";
   font-size: 96px;
   line-height: 1.07;
   letter-spacing: 0.3em;
   color: var(--white-color);
   text-align: center;
+  max-width: 303px;
 }
 @media screen and (min-width: 1024px) {
   .section-hero__title {
+    max-width: 404px;
     font-size: 128px;
-    margin-bottom: 16px;
   }
 }
 
 .section-hero__subtitle {
   margin-bottom: 40px;
-  font-family: "Montserrat";
+  margin-top: 24px;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.02em;
@@ -379,11 +379,13 @@ a {
     font-size: 20px;
     line-height: 1.2;
     margin-bottom: 56px;
+    margin-top: 16px;
   }
 }
 
 .section-hero__slogan {
   margin-bottom: 113px;
+  text-transform: uppercase;
   display: block;
   font-family: "Times New Roman";
   font-size: 32px;
@@ -442,7 +444,7 @@ a {
 
 .address__link {
   display: block;
-  font-family: "Montserrat";
+  font-family: "Montserrat-400";
   font-size: 12px;
   line-height: 1.25;
   letter-spacing: 0.01em;
@@ -495,6 +497,14 @@ a {
   position: absolute;
   top: 11px;
   left: 6px;
+}
+@media screen and (min-width: 1024px) {
+  .list-social__icon--loc {
+    top: 13px;
+    left: 10px;
+    width: 24px;
+    height: 24px;
+  }
 }
 
 .main-page-about-restaurant {
@@ -551,5 +561,34 @@ a {
   .main-page-second-photo-about-restaurant-text {
     font-size: 16px;
     width: 312px;
+  }
+}
+
+.section-hero--rest {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(././../images/restaurant/bg/restaurant-bg-min.jpg);
+}
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .section-hero--rest {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(././../images/restaurant/bg/restaurant-bg-2x-min.jpg);
+  }
+}
+@media screen and (min-width: 1024px) {
+  .section-hero--rest {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(././../images/restaurant/bg/restaurant-bg-tab-min.jpg);
+  }
+}
+@media screen and (min-width: 1024px) and (min-device-pixel-ratio: 2), screen and (min-width: 1024px) and (min-resolution: 192dpi), screen and (min-width: 1024px) and (min-resolution: 2dppx) {
+  .section-hero--rest {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(././../images/restaurant/bg/restaurant-bg-tab-2x-min.jpg);
+  }
+}
+@media screen and (min-width: 1280px) {
+  .section-hero--rest {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(././../images/restaurant/bg/restaurant-bg-desktop-min.jpg);
+  }
+}
+@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+  .section-hero--rest {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(././../images/restaurant/bg/restaurant-bg-desktop-2x-min.jpg);
   }
 }/*# sourceMappingURL=index.css.map */
