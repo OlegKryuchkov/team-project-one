@@ -1,0 +1,60 @@
+<div class="backdrop">
+  <div class="modal">
+    <button type="button" class="modal__close">
+      <svg class="modal__close-icon" width="24" height="24">
+        <use href="/src/images/symbol-defs.svg#icon-close-black"></use>
+      </svg>
+    </button>
+
+    <p class="modal__title">ЗАБРОНЮВАТИ НОМЕР</p>
+
+    <form class="modal__form">
+
+      <div class="user__wrap">
+      <div class="modal__field">
+        <label for="guest-name" class="modal__label">На кого забронювати номер?</label>
+        <div class="modal__wrap">
+          <input type="text" name="guest-name" class="modal__input input__text" placeholder="Ваше ім’я" required id="guest-name" />
+        </div>
+      </div>
+
+      <div class="modal__field">
+        <label for="guest-tel" class="modal__label">Номер телефону</label>
+        <div class="modal__wrap">
+          <input type="tel" name="guest-tel" class="modal__input" placeholder="+38 (___) ___-__-__" title="" value=""
+            required id="guest-tel" />
+        </div>
+      </div>
+      </div>
+
+      <div class="select">
+      <div class="modal__field">
+        <label for="type-room" class="modal__label">Категорія номеру</label>
+        <div class="modal__wrap">
+          <select class="modal__select modal__select-icon" id="type-room" name="type-room">
+            <option class="input__text" value="Двомісний люкс">Двомісний люкс</option>
+            <option class="input__text value="Трьохмісний">Трьохмісний</option>
+            <option class="input__text value="Двомісний">Двомісний</option>
+          </select>
+        </div>
+      </div>
+      </div>
+
+        <div class="times__wrap">
+        <div class="modal__field">
+          <label class="modal__label" for="date-start">Дата заїзду</label>
+          <input class="modal__input modal__input-icon" type="date" id="date-start" name="date-start"/>
+        </div>
+
+        <div class="modal__field">
+          <label class="modal__label" for="date-finish">Дата виїзду</label>
+          <input class="modal__input modal__input-icon" type="date" id="date-finish" name="date-finish" />
+        </div>
+        </div>
+
+      <button type="submit" class="modal__submit">ОФОРМИТИ БРОНЮВАННЯ</button>
+
+    </form>
+
+  </div>
+</div>
