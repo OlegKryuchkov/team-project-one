@@ -29,9 +29,6 @@
         rgba(0, 0, 0, 0.65)
       ),
       url(./../images/homepage/banner-bg/banner-bg-tablet.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
@@ -52,9 +49,6 @@
         rgba(0, 0, 0, 0.65)
       ),
       url(./../images/homepage/banner-bg/banner-bg-desktop.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
@@ -196,4 +190,10 @@
   position: absolute;
   top: 11px;
   left: 6px;
+  @include tablet {
+    top: 13px;
+    left: 10px;
+    width: 24px;  
+    height: 24px;
+  }
 }
