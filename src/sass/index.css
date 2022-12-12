@@ -145,7 +145,7 @@ a {
 }
 @media screen and (min-width: 1024px) {
   .section {
-    margin-top: 120px;
+    padding-top: 120px;
   }
 }
 .section-title {
@@ -303,6 +303,9 @@ a {
 }
 
 .section-hero {
+  max-width: 1280px;
+  margin-right: auto;
+  margin-left: auto;
   background: rgba(0, 0, 0, 0.65);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(./../images/homepage/banner-bg/banner-bg.jpg);
@@ -590,5 +593,34 @@ a {
 @media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
   .section-hero--rest {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(././../images/restaurant/bg/restaurant-bg-desktop-2x-min.jpg);
+  }
+}
+
+.section-hero--hotel {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(././../images/hotel/bg/hotel-bg-min.jpg);
+}
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .section-hero--hotel {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(././../images/hotel/bg/hotel-bg-2x-min.jpg);
+  }
+}
+@media screen and (min-width: 1024px) {
+  .section-hero--hotel {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(././../images/hotel/bg/hotel-bg-tab-min.jpg);
+  }
+}
+@media screen and (min-width: 1024px) and (min-device-pixel-ratio: 2), screen and (min-width: 1024px) and (min-resolution: 192dpi), screen and (min-width: 1024px) and (min-resolution: 2dppx) {
+  .section-hero--hotel {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(././../images/hotel/bg/hotel-bg-tab-2x-min.jpg);
+  }
+}
+@media screen and (min-width: 1280px) {
+  .section-hero--hotel {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(././../images/hotel/bg/hotel-bg-desktop-min.jpg);
+  }
+}
+@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+  .section-hero--hotel {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(././../images/hotel/bg/hotel-bg-desktop-2x-min.jpg);
   }
 }/*# sourceMappingURL=index.css.map */
