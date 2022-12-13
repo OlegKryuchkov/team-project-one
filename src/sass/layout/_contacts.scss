@@ -1,4 +1,35 @@
+.section-contacts {
+    background-color: var(--first-color-fon);
+    
+}
+.container__contacts {
+    position: relative;
+    z-index: 1;
+}
+.background-line {
+position: relative;
+
+    width: 550px;
+height: 0px;
+border: 1px solid rgba(186, 186, 186, 0.4);
+transform: rotate(90deg) translateY(33%);
+transform-origin: top left;
+
+}
+.background-line__left {
+left: 126px;
+}
+
+.background-line__right {
+    left: 261px;
+}
+
+.background-line__centr {
+    display: none;
+}
 .contacts__wrap {
+    position: relative;
+    z-index: 2;
     padding-top: 36px;
     padding-bottom: 32px;
 
