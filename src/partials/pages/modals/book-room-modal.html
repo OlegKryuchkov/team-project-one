@@ -1,6 +1,6 @@
-<div class="backdrop">
-  <div class="modal">
-    <button type="button" class="modal__close">
+<div class="backdrop" data-modal>
+  <div class="modal" data-modal-open>
+    <button type="button" class="modal__close" data-modal-close>
       <svg class="modal__close-icon" width="24" height="24">
         <use href="/src/images/symbol-defs.svg#icon-close-black"></use>
       </svg>
@@ -10,40 +10,43 @@
 
     <form class="modal__form">
 
-      <div class="user__wrap">
+      <div class="modal__user-wrap">
+
       <div class="modal__field">
-        <label for="guest-name" class="modal__label">На кого забронювати номер?</label>
+        <label class="modal__label" for="guest-name">На кого забронювати номер?</label>
         <div class="modal__wrap">
-          <input type="text" name="guest-name" class="modal__input input__text" placeholder="Ваше ім’я" required id="guest-name" />
+          <input class="modal__input" type="text" name="guest-name" placeholder="Ваше ім’я" required id="guest-name" required/>
         </div>
       </div>
 
       <div class="modal__field">
-        <label for="guest-tel" class="modal__label">Номер телефону</label>
+        <label class="modal__label" for="guest-tel">Номер телефону</label>
         <div class="modal__wrap">
-          <input type="tel" name="guest-tel" class="modal__input" placeholder="+38 (___) ___-__-__" title="" value=""
-            required id="guest-tel" />
+          <input class="modal__input" type="tel" name="guest-tel" placeholder="+38 (___) ___-__-__" title="+380" value="" pattern="[\+]\d{2}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" required id="guest-tel" />
         </div>
       </div>
+
       </div>
 
-      <div class="select">
+      <div class="modal__select-wrap">
+
       <div class="modal__field">
-        <label for="type-room" class="modal__label">Категорія номеру</label>
-        <div class="modal__wrap">
+        <label class="modal__label" for="type-room">Категорія номеру</label>
+        <div class="modal__wrap select__wrap">
           <select class="modal__select modal__select-icon" id="type-room" name="type-room">
             <option class="input__text" value="Двомісний люкс">Двомісний люкс</option>
-            <option class="input__text value="Трьохмісний">Трьохмісний</option>
-            <option class="input__text value="Двомісний">Двомісний</option>
+            <option class="input__text" value="Трьохмісний">Трьохмісний</option>
+            <option class="input__text" value="Двомісний">Двомісний</option>
           </select>
         </div>
       </div>
+
       </div>
 
-        <div class="times__wrap">
+        <div class="modal__times-wrap">
         <div class="modal__field">
           <label class="modal__label" for="date-start">Дата заїзду</label>
-          <input class="modal__input modal__input-icon" type="date" id="date-start" name="date-start"/>
+          <input class="modal__input modal__input-icon" style="appearance: none;" type="date" id="date-start" name="date-start"/>
         </div>
 
         <div class="modal__field">
@@ -52,7 +55,7 @@
         </div>
         </div>
 
-      <button type="submit" class="modal__submit">ОФОРМИТИ БРОНЮВАННЯ</button>
+      <button class="modal__submit" type="submit">ОФОРМИТИ БРОНЮВАННЯ</button>
 
     </form>
 
