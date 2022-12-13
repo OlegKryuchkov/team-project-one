@@ -231,14 +231,13 @@ table {
 }
 @media screen and (min-width: 1024px) {
   .section-title-post-text {
-    font-size: 20px;
+    font-size: 16px;
     width: 439px;
   }
 }
 @media screen and (min-width: 1280px) {
   .section-title-post-text {
     width: 518px;
-    font-size: 16px;
   }
 }
 
