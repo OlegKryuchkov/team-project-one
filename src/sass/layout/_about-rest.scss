@@ -3,9 +3,6 @@
   position: relative;
 }
 .main-page-photo-about-restaurant {
-  // position: absolute;
-  // top: 210px;
-  // right: 15px;
   width: 65%;
   margin-top: 28px;
   margin-left: auto;
@@ -14,11 +11,17 @@
     width: 246px;
   }
   @include tablet {
+    position: absolute;
     top: -32px;
     right: 112px;
+
+    margin-top: 0px;
+
+    width: 400px;
   }
   @include desktop {
     right: 180px;
+    width: 460px;
   }
 }
 .main-page-second-photo-about-restaurant {
@@ -39,17 +42,21 @@
   & picture {
     width: 50%;
     @include mobile {
-      max-width: 200px;
+      width: 200px;
+    }
+    @include tablet {
+      width: 350px;
+    }
+    @include desktop {
+      width: 460px;
     }
   }
-  & p {
-    width: 41%;
-  }
+
 }
 .main-page-second-photo-about-restaurant-text {
   font-size: 12px;
   line-height: 1.25;
-  line-height: 100%;
+
   letter-spacing: 0.02em;
   color: var(--second-accent-color);
   width: 163px;
