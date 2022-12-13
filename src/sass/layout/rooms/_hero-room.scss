@@ -1,9 +1,98 @@
-.hero-room {
+.background-image {
+  max-width: 1600px;
   background: rgba(0, 0, 0, 0.65);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  @media screen and (min-width: 1024px) and (max-width: 1279px) {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
 }
+.background-image--double-lux {
+  background-image: linear-gradient(
+      180deg,
+      #000000 0%,
+      rgba(0, 0, 0, 0.55) 9.17%,
+      rgba(0, 0, 0, 0) 50%
+    ),
+    url(././../images/hotel/bg/hotel-bg-min.jpg);
+  @include retina {
+    background-image: linear-gradient(
+        180deg,
+        #000000 0%,
+        rgba(0, 0, 0, 0.55) 9.17%,
+        rgba(0, 0, 0, 0) 50%
+      ),
+      url(././../images/hotel/bg/hotel-bg-2x-min.jpg);
+  }
+  background-image: linear-gradient(
+      180deg,
+      #000000 0%,
+      rgba(0, 0, 0, 0.55) 9.17%,
+      rgba(0, 0, 0, 0) 50%
+    ),
+    url(././../images/hotel/bg/hotel-bg-tab-min.jpg);
+  @include retina {
+    background-image: linear-gradient(
+        180deg,
+        #000000 0%,
+        rgba(0, 0, 0, 0.55) 9.17%,
+        rgba(0, 0, 0, 0) 50%
+      ),
+      url(././../images/hotel/bg/hotel-bg-tab-2x-min.jpg);
+  }
+  @include desktop {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-image: linear-gradient(
+        180deg,
+        #000000 0%,
+        rgba(0, 0, 0, 0.55) 9.17%,
+        rgba(0, 0, 0, 0) 50%
+      ),
+      url(././../images/hotel/bg/hotel-bg-desktop-min.jpg);
+    @include retina {
+      background-image: linear-gradient(
+          180deg,
+          #000000 0%,
+          rgba(0, 0, 0, 0.55) 9.17%,
+          rgba(0, 0, 0, 0) 50%
+        ),
+        url(././../images/hotel/bg/hotel-bg-desktop-2x-min.jpg);
+    }
+  }
+}
+.slick-prev,
+.slick-next {
+  font-size: 0px;
+  width: 40px;
+  height: 40px;
+}
+.slick-prev.slick-arrow {
+  background-image: url(../images/arrow-left.svg);
+  left: 5vw;
+  width: 40px;
+  height: 40px;
+  z-index: 11111;
+}
+.slick-next.slick-arrow {
+  background-image: url(../images/arrow-right.svg);
+  right: 5vw;
+}
+.slick-prev:before,
+.slick-next:before {
+  content: '';
+}
+
 .container--hroom {
-  padding-top: 350px;
+  padding-top: 483px;
   position: relative;
+  @include tablet {
+    padding-bottom: 20px;
+  }
+  @include desktop {
+    padding-bottom: 48px;
+  }
 }
 .box-margin {
   margin-bottom: 17px;
@@ -14,7 +103,7 @@
     margin-bottom: 0px;
   }
 }
-.hero-room__title {
+.hero-room__slick {
   margin-bottom: 14px;
 
   font-family: 'Times New Roman';
@@ -80,13 +169,10 @@
     right: 47px;
   }
   @include desktop {
-    bottom: 22px;
-    right: 84px;
+    bottom: 66px;
+    right: 85px;
   }
 }
 .slick-dotted.slick-slider {
   margin-bottom: 93px;
-}
-.relative {
-  position: relative;
 }
