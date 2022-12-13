@@ -212,7 +212,7 @@ table {
   font-family: Times New Roman;
   font-style: Regular;
   font-size: 20px;
-  line-height: 100%;
+  line-height: 1.15;
   color: var(--pre-title-text-color);
 }
 @media screen and (min-width: 1024px) {
@@ -568,13 +568,17 @@ table {
 }
 @media screen and (min-width: 1024px) {
   .main-page-photo-about-restaurant {
+    position: absolute;
     top: -32px;
     right: 112px;
+    margin-top: 0px;
+    width: 400px;
   }
 }
 @media screen and (min-width: 1280px) {
   .main-page-photo-about-restaurant {
     right: 180px;
+    width: 460px;
   }
 }
 
@@ -601,17 +605,23 @@ table {
 }
 @media screen and (min-width: 414px) {
   .main-page-second-photo-about-restaurant picture {
-    max-width: 200px;
+    width: 200px;
   }
 }
-.main-page-second-photo-about-restaurant p {
-  width: 41%;
+@media screen and (min-width: 1024px) {
+  .main-page-second-photo-about-restaurant picture {
+    width: 350px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .main-page-second-photo-about-restaurant picture {
+    width: 460px;
+  }
 }
 
 .main-page-second-photo-about-restaurant-text {
   font-size: 12px;
   line-height: 1.25;
-  line-height: 100%;
   letter-spacing: 0.02em;
   color: var(--second-accent-color);
   width: 163px;
