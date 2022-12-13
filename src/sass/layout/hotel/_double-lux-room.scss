@@ -1,1 +1,182 @@
+.room-doublelux {
+  min-height: 1050px;
+  background: var(--first-color-fon);
+  position: relative;
+}
 
+.room-doublelux__content {
+  padding-top: 32px;
+  padding-left: 15px;
+
+  font-family: 'Times New Roman';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: calc(23 / 20);
+  color: var(--pre-title-text-color);
+
+  @include tablet {
+    padding-top: 62px;
+    padding-left: 47px;
+
+    font-size: 32px;
+    line-height: calc(37 / 32);
+  }
+
+  @include desktop {
+    padding-top: 72px;
+    padding-left: 85px;
+
+    font-size: 32px;
+    line-height: calc(37 / 32);
+  }
+}
+
+.room-doublelux__logo {
+  padding-top: 8px;
+  padding-left: 15px;
+
+  font-family: 'Film P3';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: calc(43 / 40);
+  letter-spacing: 0.3em;
+  color: #494848;
+
+  @include tablet {
+    padding-top: 4px;
+    padding-left: 47px;
+
+    font-size: 64px;
+    line-height: calc(69 / 64);
+  }
+
+  @include desktop {
+    padding-top: 4px;
+    padding-left: 85px;
+
+    font-size: 64px;
+    line-height: calc(69 / 64);
+  }
+}
+
+.room-doublelux__title {
+  padding-top: 32px;
+  padding-left: 15px;
+
+  font-family: 'Times New Roman';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: calc(28 / 24);
+  letter-spacing: 0.05em;
+  color: var(--text-menu-color);
+
+  @include tablet {
+    padding-top: 62px;
+    padding-left: 47px;
+
+    font-size: 30px;
+    line-height: calc(34 / 30);
+  }
+
+  @include desktop {
+    padding-top: 72px;
+    padding-left: 85px;
+
+    font-size: 36px;
+    line-height: calc(41 / 36);
+  }
+}
+
+.room-doublelux__description {
+  padding-top: 12px;
+  padding-left: 15px;
+  max-width: 258px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: calc(15 / 12);
+  letter-spacing: 0.02em;
+  color: #5f5f5f;
+
+  @include tablet {
+    padding-top: 16px;
+    padding-left: 47px;
+
+    max-width: 439px;
+
+    font-size: 16px;
+    line-height: calc(20 / 16);
+  }
+
+  @include desktop {
+    padding-top: 24px;
+    padding-left: 85px;
+
+    max-width: 400px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(20 / 16);
+    color: #7a7a7a;
+  }
+}
+
+.room-doublelux__photo {
+  position: absolute;
+  top: 286px;
+  left: 155px;
+
+  @include tablet {
+    top: -32px;
+    left: 512px;
+  }
+
+  @include desktop {
+    top: -33px;
+    left: 640px;
+  }
+}
+
+// .room-doublelux__button {
+//   display: block;
+
+//   margin-left: auto;
+//   margin-right: auto;
+// }
+// .room-doublelux__button-prices {
+//   display: block;
+//   margin-top: 16px;
+//   margin-left: auto;
+//   margin-right: auto;
+// }
+
+.room-doublelux__button-wrap {
+  margin-top: 652px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+
+  @include tablet {
+    margin-left: auto;
+    margin-right: 47px;
+    padding-bottom: 145px;
+    justify-content: right;
+    align-items: flex-end;
+  }
+
+  @include desktop {
+    margin-left: auto;
+    margin-right: 85px;
+    padding-bottom: 182px;
+    justify-content: right;
+    align-items: flex-end;
+  }
+}
