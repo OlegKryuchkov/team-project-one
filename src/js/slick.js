@@ -17,8 +17,11 @@ $('.fade2').slick({
   infinite: true,
   speed: 500,
   slidesToShow: 2,
-  fade: true,
+  // fade: true,
   cssEase: 'linear',
   autoplay: true,
   adaptiveHeight: true,
+  waitForAnimate: false,
+  // centerMode: true,
+  variableWidth: true,
 });

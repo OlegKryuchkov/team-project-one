@@ -86,17 +86,13 @@
 .slider-about {
   margin-top: 32px;
   min-width: 0;
-  // height: 245px;
-  // width: 245px;
   width: 100%;
   height: 100%;
   position: relative;
   padding: 0 0 0 69px;
   & .slick-arrow {
     position: absolute;
-    // top: 273px;
-    top: 123%;
-    // left: 287px;
+    top: 279px;
     width: 30px;
     height: 16px;
     background-size: contain;
@@ -119,6 +115,10 @@
     &:hover {
       background-image: url(../images/svg/arrow-right-about-gold.svg);
     }
+  }
+  .slider-about__item {
+    text-align: center;
+    margin-right: 24px;
   }
   // &__item.slick-slide {
   //   height: 245px;

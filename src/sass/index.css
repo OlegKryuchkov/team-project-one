@@ -1241,7 +1241,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
 }
 .slider-about .slick-arrow {
   position: absolute;
-  top: 123%;
+  top: 279px;
   width: 30px;
   height: 16px;
   background-size: contain;
@@ -1261,6 +1261,10 @@ input[type=date]::-webkit-calendar-picker-indicator {
 }
 .slider-about .slick-arrow.slick-next:hover {
   background-image: url(../images/svg/arrow-right-about-gold.svg);
+}
+.slider-about .slider-about__item {
+  text-align: center;
+  margin-right: 24px;
 }
 
 .details-rest {
