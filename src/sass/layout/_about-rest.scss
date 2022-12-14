@@ -72,8 +72,36 @@
   }
 }
 
-// .main-page-about-restaurant-slider {
-//   // position: absolute;
-//   // bottom: 20px;
-//   // right: 85px;
-// }
+.slider-about {
+  margin-top: 32px;
+  min-width: 0;
+  position: relative;
+  padding: 0 0 0 69px;
+}
+.slick-list {
+  overflow: hidden;
+}
+.slick-track {
+  display: flex;
+}
+// Slider-about styles
+.slider-about .slick-arrow {
+  position: absolute;
+  top: 120%;
+  // left: 287px;
+  width: 30px;
+  height: 16px;
+  background-size: contain;
+}
+// Arrow left
+.slider-about .slick-arrow.slick-prev {
+  left: 287px;
+
+  background: url(../images/svg/arrow-left-about.svg) 0 0 / 100% no-repeat;
+}
+// Arrow right
+.slider-about .slick-arrow.slick-next {
+  // left: calc (287 + 64);
+  right: 13px;
+  background: url(../images/svg/arrow-right-about.svg) 0 0 / 100% no-repeat;
+}
