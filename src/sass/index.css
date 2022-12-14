@@ -1241,19 +1241,20 @@ input[type=date]::-webkit-calendar-picker-indicator {
 .slider-about {
   margin-top: 32px;
   min-width: 0;
-  width: 100%;
+  width: calc(100% - 54px);
   height: 100%;
   position: relative;
-  margin-left: 69px;
+  margin-left: auto;
+  right: -15px;
   background: #dadada;
   box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
   border-radius: 2px;
 }
 @media screen and (min-width: 1024px) {
   .slider-about {
-    position: relative;
     width: 428px;
     margin: 0;
+    margin-right: 15px;
     margin-left: auto;
     top: -28px;
   }
@@ -1275,7 +1276,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
   background-size: contain;
 }
 .slider-about .slick-arrow.slick-prev {
-  left: 287px;
+  left: 220px;
   background: url(../images/svg/arrow-left-about.svg) 0 0/100% no-repeat;
 }
 @media screen and (min-width: 1024px) {
@@ -1295,7 +1296,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
   background-image: url(../images/svg/arrow-left-about-gold.svg);
 }
 .slider-about .slick-arrow.slick-next {
-  right: 13px;
+  right: 18px;
   background: url(../images/svg/arrow-right-about.svg) 0 0/100% no-repeat;
 }
 @media screen and (min-width: 1024px) {
