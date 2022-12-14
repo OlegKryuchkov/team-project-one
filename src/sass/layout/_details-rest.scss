@@ -1,0 +1,164 @@
+.details-rest {
+  max-width: 1280px;
+  margin-right: auto;
+  margin-left: auto;
+  background: rgba(0, 0, 0, 0.65);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.65),
+      rgba(0, 0, 0, 0.65)
+    ),
+    url(./../images/homepage/restaurant-bg/restaurant-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)
+      ),
+      url(./../images/homepage/restaurant-bg/restaurant-bg-2x.jpg);
+  }
+  @include tablet {
+    padding-top: 48px;
+    padding-bottom: 15px;
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)
+      ),
+      url(./../images/homepage/restaurant-bg/restaurant-tab-bg.jpg);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url(./../images/homepage/restaurant-bg/restaurant-tab-bg-2x.jpg);
+    }
+  }
+  @include desktop {
+    padding-top: 48px;
+    padding-bottom: 94px;
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)
+      ),
+      url(./../images/homepage/restaurant-bg/restaurant-desktop-bg.jpg);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url(./../images/homepage/restaurant-bg/restaurant-desktop-bg-2x.jpg);
+    }
+  }
+}
+
+.details-rest__information {
+  margin-left: 140px;
+  @include tablet {
+    margin-left: 278px;
+  }
+  @include desktop {
+    margin-left: 338px;
+  }
+}
+
+.details-rest__title {
+  font-family: 'Film P3';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.075;
+  letter-spacing: 0.3em;
+
+  color: var(--white-color);
+
+  margin-bottom: 12px;
+}
+
+.details-rest__post-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+
+  color: #ffffff;
+
+  margin-bottom: 20px;
+}
+
+.details-rest__text {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+
+  color: var(--second-text-color);
+
+  margin-bottom: 48px;
+
+  @include tablet {
+    width: 610px;
+  }
+}
+
+.rest-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @include tablet {
+    display: block;
+  }
+}
+
+.table-button {
+  margin-bottom: 16px;
+}
+
+.menu-button {
+  display: block;
+  padding: 12px 32px;
+
+  background: rgba(0, 0, 0, 0.4);
+
+  border: 2px solid var(--white-color);
+  border-radius: 25px;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+
+  transition: background-color var(--animation-link);
+
+  &:hover,
+  &:focus {
+    background-color: var(--white-color);
+  }
+  @include mobile {
+    min-width: 236px;
+  }
+  @include tablet {
+    max-width: 236px;
+    padding: 12px 30px;
+  }
+}
+
+.rest-slider-photo {
+  width: 270px;
+}
