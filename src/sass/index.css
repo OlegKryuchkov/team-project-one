@@ -186,7 +186,7 @@ table {
 }
 @media screen and (min-width: 1280px) {
   .section-about {
-    padding-bottom: 118px;
+    padding-bottom: 225px;
   }
 }
 
@@ -1211,6 +1211,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
 @media screen and (min-width: 1280px) {
   .main-page-second-photo-about-restaurant picture {
     width: 460px;
+    box-shadow: none;
   }
 }
 
@@ -1257,6 +1258,15 @@ input[type=date]::-webkit-calendar-picker-indicator {
     top: -28px;
   }
 }
+@media screen and (min-width: 1280px) {
+  .slider-about {
+    position: absolute;
+    width: 548px;
+    height: 254px;
+    top: 794px;
+    right: 0;
+  }
+}
 .slider-about .slick-arrow {
   position: absolute;
   top: 279px;
@@ -1274,6 +1284,13 @@ input[type=date]::-webkit-calendar-picker-indicator {
     top: 242;
   }
 }
+@media screen and (min-width: 1280px) {
+  .slider-about .slick-arrow.slick-prev {
+    top: 302;
+    left: 445;
+    right: 103px;
+  }
+}
 .slider-about .slick-arrow.slick-prev:hover {
   background-image: url(../images/svg/arrow-left-about-gold.svg);
 }
@@ -1285,6 +1302,12 @@ input[type=date]::-webkit-calendar-picker-indicator {
   .slider-about .slick-arrow.slick-next {
     right: 0;
     top: 242;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .slider-about .slick-arrow.slick-next {
+    top: 302;
+    right: 9px;
   }
 }
 .slider-about .slick-arrow.slick-next:hover {

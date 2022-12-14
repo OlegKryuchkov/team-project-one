@@ -57,6 +57,7 @@
     }
     @include desktop {
       width: 460px;
+      box-shadow: none;
     }
   }
 }
@@ -102,6 +103,13 @@
     margin-left: auto;
     top: -28px;
   }
+  @include desktop {
+    position: absolute;
+    width: 548px;
+    height: 254px;
+    top: 794px;
+    right: 0;
+  }
   & .slick-arrow {
     position: absolute;
     top: 279px;
@@ -117,6 +125,11 @@
       left: 334px;
       top: calc(194 + (96 / 2));
     }
+    @include desktop {
+      top: calc(254 + (96 / 2));
+      left: calc(254 + 40 + 151);
+      right: 103px;
+    }
     &:hover {
       background-image: url(../images/svg/arrow-left-about-gold.svg);
     }
@@ -128,6 +141,10 @@
     @include tablet {
       right: 0;
       top: calc(194 + (96 / 2));
+    }
+    @include desktop {
+      top: calc(254 + (96 / 2));
+      right: 9px;
     }
     &:hover {
       background-image: url(../images/svg/arrow-right-about-gold.svg);
