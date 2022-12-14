@@ -1222,37 +1222,45 @@ input[type=date]::-webkit-calendar-picker-indicator {
   }
 }
 
-.slider-about {
-  margin-top: 32px;
-  min-width: 0;
-  position: relative;
-  padding: 0 0 0 69px;
-}
-
 .slick-list {
   overflow: hidden;
 }
 
 .slick-track {
   display: flex;
+  align-items: flex-start;
 }
 
+.slider-about {
+  margin-top: 32px;
+  min-width: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  padding: 0 0 0 69px;
+}
 .slider-about .slick-arrow {
   position: absolute;
-  top: 120%;
+  top: 123%;
   width: 30px;
   height: 16px;
   background-size: contain;
 }
-
 .slider-about .slick-arrow.slick-prev {
   left: 287px;
   background: url(../images/svg/arrow-left-about.svg) 0 0/100% no-repeat;
+  fill: var(--accent-color);
 }
-
+.slider-about .slick-arrow.slick-prev:hover {
+  background-image: url(../images/svg/arrow-left-about-gold.svg);
+}
 .slider-about .slick-arrow.slick-next {
   right: 13px;
   background: url(../images/svg/arrow-right-about.svg) 0 0/100% no-repeat;
+  fill: var(--accent-color);
+}
+.slider-about .slick-arrow.slick-next:hover {
+  background-image: url(../images/svg/arrow-right-about-gold.svg);
 }
 
 .details-rest {
