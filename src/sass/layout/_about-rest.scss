@@ -1,5 +1,9 @@
 .main-page-about-restaurant {
   background-color: var(--first-color-fon);
+}
+.main-page-about-restaurant-container {
+  width: 100%;
+  height: 100%;
   position: relative;
 }
 .main-page-photo-about-restaurant {
@@ -12,21 +16,23 @@
   }
   @include tablet {
     position: absolute;
-    top: -32px;
-    right: 112px;
+    top: -153px;
+    right: 65px;
 
     margin-top: 0px;
 
     width: 400px;
   }
   @include desktop {
-    right: 180px;
+    right: 95px;
+    top: -153px;
+
     width: 460px;
   }
 }
 .main-page-second-photo-about-restaurant {
   margin-top: 32px;
-  // margin-bottom: 349px;
+
   display: flex;
   align-items: center;
   gap: 20px;
