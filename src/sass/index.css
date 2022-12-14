@@ -181,7 +181,7 @@ table {
 @media screen and (min-width: 1024px) {
   .section-about {
     padding-top: 120px;
-    padding-bottom: 96px;
+    padding-bottom: 68px;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -1148,6 +1148,9 @@ input[type=date]::-webkit-calendar-picker-indicator {
   width: 65%;
   margin-top: 28px;
   margin-left: auto;
+  background: #dadada;
+  box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
 }
 @media screen and (min-width: 414px) {
   .main-page-photo-about-restaurant {
@@ -1191,6 +1194,9 @@ input[type=date]::-webkit-calendar-picker-indicator {
 }
 .main-page-second-photo-about-restaurant picture {
   width: 50%;
+  background: #dadada;
+  box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
 }
 @media screen and (min-width: 414px) {
   .main-page-second-photo-about-restaurant picture {
@@ -1237,7 +1243,19 @@ input[type=date]::-webkit-calendar-picker-indicator {
   width: 100%;
   height: 100%;
   position: relative;
-  padding: 0 0 0 69px;
+  margin-left: 69px;
+  background: #dadada;
+  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+}
+@media screen and (min-width: 1024px) {
+  .slider-about {
+    position: relative;
+    width: 428px;
+    margin: 0;
+    margin-left: auto;
+    top: -28px;
+  }
 }
 .slider-about .slick-arrow {
   position: absolute;
@@ -1249,7 +1267,12 @@ input[type=date]::-webkit-calendar-picker-indicator {
 .slider-about .slick-arrow.slick-prev {
   left: 287px;
   background: url(../images/svg/arrow-left-about.svg) 0 0/100% no-repeat;
-  fill: var(--accent-color);
+}
+@media screen and (min-width: 1024px) {
+  .slider-about .slick-arrow.slick-prev {
+    left: 334px;
+    top: 242;
+  }
 }
 .slider-about .slick-arrow.slick-prev:hover {
   background-image: url(../images/svg/arrow-left-about-gold.svg);
@@ -1257,7 +1280,12 @@ input[type=date]::-webkit-calendar-picker-indicator {
 .slider-about .slick-arrow.slick-next {
   right: 13px;
   background: url(../images/svg/arrow-right-about.svg) 0 0/100% no-repeat;
-  fill: var(--accent-color);
+}
+@media screen and (min-width: 1024px) {
+  .slider-about .slick-arrow.slick-next {
+    right: 0;
+    top: 242;
+  }
 }
 .slider-about .slick-arrow.slick-next:hover {
   background-image: url(../images/svg/arrow-right-about-gold.svg);
@@ -1265,6 +1293,11 @@ input[type=date]::-webkit-calendar-picker-indicator {
 .slider-about .slider-about__item {
   text-align: center;
   margin-right: 24px;
+}
+@media screen and (min-width: 1024px) {
+  .slider-about .slider-about__item {
+    margin-right: 40px;
+  }
 }
 
 .details-rest {
