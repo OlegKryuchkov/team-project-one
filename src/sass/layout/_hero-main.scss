@@ -1,5 +1,5 @@
 .section-hero {
-  max-width: 1600px;
+  max-width: 1280px;
   margin-right: auto;
   margin-left: auto;
   background: rgba(0, 0, 0, 0.65);
@@ -13,9 +13,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+  @include retina {
     background-image: linear-gradient(
         to right,
         rgba(0, 0, 0, 0.65),
@@ -32,9 +30,7 @@
         rgba(0, 0, 0, 0.65)
       ),
       url(./../images/homepage/banner-bg/banner-bg-tablet.jpg);
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
+    @include retina {
       background-image: linear-gradient(
           to right,
           rgba(0, 0, 0, 0.65),
@@ -52,9 +48,7 @@
         rgba(0, 0, 0, 0.65)
       ),
       url(./../images/homepage/banner-bg/banner-bg-desktop.jpg);
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
+    @include retina {
       background-image: linear-gradient(
           to right,
           rgba(0, 0, 0, 0.65),

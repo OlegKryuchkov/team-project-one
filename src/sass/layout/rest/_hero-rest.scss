@@ -5,9 +5,7 @@
       rgba(0, 0, 0, 0.65)
     ),
     url(././../images/restaurant/bg/restaurant-bg-min.jpg);
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+  @include retina {
     background-image: linear-gradient(
         to right,
         rgba(0, 0, 0, 0.65),
@@ -22,9 +20,7 @@
         rgba(0, 0, 0, 0.65)
       ),
       url(././../images/restaurant/bg/restaurant-bg-tab-min.jpg);
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
+    @include retina {
       background-image: linear-gradient(
           to right,
           rgba(0, 0, 0, 0.65),
@@ -40,9 +36,7 @@
         rgba(0, 0, 0, 0.65)
       ),
       url(././../images/restaurant/bg/restaurant-bg-desktop-min.jpg);
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
+    @include retina {
       background-image: linear-gradient(
           to right,
           rgba(0, 0, 0, 0.65),
