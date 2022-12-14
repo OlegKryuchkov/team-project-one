@@ -24,12 +24,33 @@ img {
   height: auto;
   max-width: 100%;
 }
-* {
-  box-sizing: border-box;
-}
 li {
   list-style: none;
 }
 a {
   text-decoration: none;
+}
+* {
+  box-sizing: border-box;
+}
+
+table,
+tbody,
+caption,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-style: inherit;
+  vertical-align: baseline;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
 }
